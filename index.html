@@ -36,38 +36,44 @@
   </p>
   <ul>
     <li>Course files, documents, and text content visible to the user on Canvas</li>
-    <li>User’s existing Canvas session cookies (read-only) to confirm that they are logged in</li>
+    <li>User’s existing Canvas session cookies (read-only) to confirm login status</li>
   </ul>
   <p>
-    The Extension does <strong>not</strong> collect or store personal identifiers such as name,
-    email, password, or contact information.
+    The Extension does <strong>not</strong> collect or store personal identifiers such as
+    name, email, password, or contact information.
   </p>
 
   <h2>How Information Is Used</h2>
-  <p>User content (such as files or text) may be temporarily transmitted to:</p>
+  <p>User content (such as files, documents, or text) may be transmitted to:</p>
   <ul>
-    <li><strong>CanvasAI’s backend server</strong> for processing</li>
+    <li><strong>CanvasAI’s backend server</strong> for file handling and processing</li>
     <li><strong>Google Gemini or other AI APIs</strong> to generate summaries or study materials</li>
   </ul>
   <p>
-    This content is used <strong>only</strong> to fulfill the user’s request and is not used for any
-    analytics, advertising, or secondary purposes.
+    This content is used <strong>only</strong> to fulfill the user’s request and is not used
+    for analytics, advertising, or any other secondary purpose.
   </p>
 
   <h2>Data Storage and Retention</h2>
+  <p>
+    To provide convenience, the Extension may temporarily store course files or
+    processed study materials in <strong>Google Cloud Storage (GCS)</strong> to avoid requiring
+    users to re-upload files during repeated use.
+  </p>
   <ul>
-    <li>No user data is permanently stored by the Extension.</li>
-    <li>Any content transmitted to CanvasAI’s backend or AI APIs is processed
-      temporarily and automatically deleted after processing is complete.</li>
-    <li>No data is sold or shared with third parties.</li>
+    <li>Files stored in GCS are <strong>user-specific and private</strong>.</li>
+    <li>No stored files are shared with third parties.</li>
+    <li>All stored files are automatically deleted after <strong>90 days of user inactivity</strong>.</li>
+    <li>Users can immediately delete all stored files at any time using the Extension’s
+        built-in “Delete Data” option in the settings panel.</li>
   </ul>
 
   <h2>Permissions</h2>
   <p>The Extension uses only the permissions required to function:</p>
   <ul>
     <li><strong>host permissions</strong> – to access Canvas pages and the CanvasAI backend</li>
-    <li><strong>cookies</strong> – to read the user’s existing Canvas session for authentication</li>
-    <li><strong>storage</strong> – to store temporary preferences and local settings</li>
+    <li><strong>cookies</strong> – to read the user’s existing Canvas session (read-only)</li>
+    <li><strong>storage</strong> – to store temporary preferences and local extension settings</li>
   </ul>
 
   <h2>Third-Party Services</h2>
@@ -80,8 +86,11 @@
   <h2>User Control and Consent</h2>
   <ul>
     <li>Data is processed only when the user actively initiates an action.</li>
+    <li>Users may delete <strong>all stored course files and generated content</strong> at any time
+        using the Extension’s built-in settings.</li>
     <li>Users may delete local extension data via Chrome’s extension settings.</li>
-    <li>Uninstalling the extension immediately stops all data processing.</li>
+    <li>Uninstalling the extension immediately stops all data access and deletes any
+        locally stored data.</li>
   </ul>
 
   <h2>Remote Code</h2>
