@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy – CanvasAI </title>
+  <title>Privacy Policy – CanvasAI</title>
   <style>
     body {
       font-family: system-ui, sans-serif;
@@ -17,42 +17,85 @@
   </style>
 </head>
 <body>
+
   <h1>Privacy Policy</h1>
   <p><strong>Effective Date:</strong> October 10, 2025</p>
 
   <h2>Overview</h2>
-  <p>CanvasAI helps users access their Canvas course files, process them with AI models, and display results directly in their browser. It is designed to operate entirely under user control and does not collect or share personal information.</p>
+  <p>
+    CanvasAI (“the Extension”) helps users access course materials from Canvas LMS
+    and generate study assistance using AI models. The Extension operates only when
+    the user chooses to activate it and processes data solely for the purpose of
+    providing the requested functionality.
+  </p>
 
-  <h2>Data Collection and Use</h2>
+  <h2>Information We Access</h2>
+  <p>
+    The Extension accesses the following data <strong>only when the user activates the
+    extension on a Canvas page</strong>:
+  </p>
   <ul>
-    <li>The Extension does <strong>not</strong> collect, sell, or share personally identifiable information such as name, email, or location.</li>
-    <li>The Extension temporarily accesses Canvas pages and course materials that the user explicitly opens and activates the extension on. This content is processed only to generate the requested AI output and is not stored permanently or shared with third parties.</li>
-    <li>Cookies from Canvas are read locally to confirm that the user is already signed in, allowing the extension to fetch files they have permission to access. Cookies are never stored or transmitted externally.</li>
+    <li>Course files, documents, and text content visible to the user on Canvas</li>
+    <li>User’s existing Canvas session cookies (read-only) to confirm that they are logged in</li>
+  </ul>
+  <p>
+    The Extension does <strong>not</strong> collect or store personal identifiers such as name,
+    email, password, or contact information.
+  </p>
+
+  <h2>How Information Is Used</h2>
+  <p>User content (such as files or text) may be temporarily transmitted to:</p>
+  <ul>
+    <li><strong>CanvasAI’s backend server</strong> for processing</li>
+    <li><strong>Google Gemini or other AI APIs</strong> to generate summaries or study materials</li>
+  </ul>
+  <p>
+    This content is used <strong>only</strong> to fulfill the user’s request and is not used for any
+    analytics, advertising, or secondary purposes.
+  </p>
+
+  <h2>Data Storage and Retention</h2>
+  <ul>
+    <li>No user data is permanently stored by the Extension.</li>
+    <li>Any content transmitted to CanvasAI’s backend or AI APIs is processed
+      temporarily and automatically deleted after processing is complete.</li>
+    <li>No data is sold or shared with third parties.</li>
   </ul>
 
   <h2>Permissions</h2>
-  <p>The Extension uses limited Chrome permissions strictly to provide its core features:</p>
+  <p>The Extension uses only the permissions required to function:</p>
   <ul>
-    <li><strong>activeTab / tabs / scripting</strong> – To access the current Canvas page when the user clicks the extension and insert scripts needed to gather course materials.</li>
-    <li><strong>host permissions</strong> – To interact with Canvas and Google Cloud Storage APIs securely.</li>
-    <li><strong>storage</strong> – To save local preferences and cache temporary data.</li>
-    <li><strong>cookies</strong> – To confirm user sessions with Canvas.</li>
-    <li><strong>downloads</strong> – To allow users to download processed results to their device or cloud storage.</li>
+    <li><strong>host permissions</strong> – to access Canvas pages and the CanvasAI backend</li>
+    <li><strong>cookies</strong> – to read the user’s existing Canvas session for authentication</li>
+    <li><strong>storage</strong> – to store temporary preferences and local settings</li>
   </ul>
 
   <h2>Third-Party Services</h2>
-  <p>The Extension may communicate with external APIs (such as Google Cloud Storage or Gemini) to process files and return results. These requests are made securely over HTTPS, and no user-identifying data is transmitted.</p>
+  <p>
+    The Extension communicates with secure APIs (such as CanvasAI’s backend server and
+    Google Gemini) to process user-initiated requests. These services do not store or
+    reuse user content outside the scope of fulfilling the request.
+  </p>
+
+  <h2>User Control and Consent</h2>
+  <ul>
+    <li>Data is processed only when the user actively initiates an action.</li>
+    <li>Users may delete local extension data via Chrome’s extension settings.</li>
+    <li>Uninstalling the extension immediately stops all data processing.</li>
+  </ul>
 
   <h2>Remote Code</h2>
-  <p>The Extension does not fetch or execute remote code. All scripts run locally within the browser.</p>
-
-  <h2>Data Retention</h2>
-  <p>No user data or content is permanently stored by the Extension or its developers. Any temporary data processed by the backend APIs is automatically deleted after completion of the user’s request.</p>
+  <p>
+    The Extension does not fetch or execute any remote code. All executable code is
+    packaged within the extension.
+  </p>
 
   <h2>Contact</h2>
-  <p>For questions or concerns about this policy, please contact:<br>
-  <strong>CanvasAI</strong><br>
-  dev@canvasai.com</p>
+  <p>
+    For questions or concerns, contact:<br>
+    <strong>CanvasAI</strong><br>
+    dev@canvasai.com
+  </p>
 
   <p>© 2025 CanvasAI. All rights reserved.</p>
 </body>
